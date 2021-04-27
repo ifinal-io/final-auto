@@ -1,5 +1,7 @@
 package org.ifinalframework.auto.service.processor;
 
+import org.ifinalframework.auto.service.annotation.AutoService;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -16,8 +18,6 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.DeclaredType;
 import javax.lang.model.util.ElementFilter;
 
-import org.ifinalframework.auto.service.annotation.AutoService;
-
 /**
  * AutoServiceProcessor.
  *
@@ -30,7 +30,7 @@ import org.ifinalframework.auto.service.annotation.AutoService;
 @SupportedAnnotationTypes("*")
 public class AutoServiceProcessor extends AbsServiceProcessor {
 
-    private static final String AUTO_SERVICE = "org.ifinal.auto.service.annotation.AutoService";
+    private static final String AUTO_SERVICE = "org.ifinalframework.auto.service.annotation.AutoService";
 
     /**
      * value.
