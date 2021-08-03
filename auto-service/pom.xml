@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?><!--
   ~ Copyright 2020-2021 the original author or authors.
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -19,7 +18,7 @@
     <parent>
         <artifactId>final-auto</artifactId>
         <groupId>org.ifinalframework.auto</groupId>
-        <version>1.2.1-SNAPSHOT</version>
+        <version>1.2.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -37,6 +36,20 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <proc>none</proc>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <doclet>org.ifinalframework.auto.javadoc.core.JavaDocDoclet</doclet>
+                    <docletArtifact>
+                        <groupId>org.ifinalframework.auto</groupId>
+                        <artifactId>auto-javadoc</artifactId>
+                        <version>1.2.1-SNAPSHOT</version>
+                    </docletArtifact>
+                    <useStandardDocletOptions>false</useStandardDocletOptions>
+                    <outputDirectory>${project.basedir}/target/classes/META-INF/javadoc</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

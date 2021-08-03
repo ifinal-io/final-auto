@@ -9,9 +9,6 @@ import java.util.Set;
 import java.util.function.Predicate;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedOptions;
-import javax.annotation.processing.SupportedSourceVersion;
-import javax.lang.model.SourceVersion;
 import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.AnnotationValue;
 import javax.lang.model.element.TypeElement;
@@ -25,8 +22,6 @@ import javax.lang.model.util.ElementFilter;
  * @version 1.0.0
  * @since 1.0.0
  */
-@SupportedOptions({"debug", "verify"})
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
 @SupportedAnnotationTypes("*")
 public class AutoServiceProcessor extends AbsServiceProcessor {
 
