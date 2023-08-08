@@ -19,14 +19,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.ifinalframework.project</groupId>
-        <artifactId>final-project</artifactId>
-        <version>1.5.2</version>
+        <artifactId>final-dependencies</artifactId>
+        <version>1.5.3-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>org.ifinalframework.auto</groupId>
     <artifactId>final-auto</artifactId>
-    <version>1.5.2</version>
+    <version>1.5.3-SNAPSHOT</version>
     <name>final-auto</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
@@ -45,12 +45,12 @@
             <dependency>
                 <groupId>org.ifinalframework.auto</groupId>
                 <artifactId>auto-service</artifactId>
-                <version>1.5.2</version>
+                <version>1.5.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.ifinalframework.auto</groupId>
                 <artifactId>auto-spring</artifactId>
-                <version>1.5.2</version>
+                <version>1.5.3-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
